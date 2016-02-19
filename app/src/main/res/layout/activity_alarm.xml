@@ -30,7 +30,7 @@
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/Bback2"
+
         android:layout_marginBottom="10dp" />
 
 

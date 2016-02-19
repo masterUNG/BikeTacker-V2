@@ -39,7 +39,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:id="@+id/TFusername"
-            android:hint="@string/username_title"/>
+            android:hint="@string/username_title"
+            android:inputType="text" />
 
         <EditText
             android:layout_width="match_parent"

@@ -1,5 +1,6 @@
 package com.project.nilawan.biketracker;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -51,8 +52,8 @@ public class MapsActivity extends FragmentActivity {
         Bback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(MapsActivity.this, Control.class); //Notification
-//                startActivity(intent);
+                Intent intent = new Intent(MapsActivity.this, AfterClickActivity.class); //Notification
+                startActivity(intent);
 
                 finish();
 

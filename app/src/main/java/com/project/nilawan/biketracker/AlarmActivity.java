@@ -67,8 +67,10 @@ public class AlarmActivity extends Activity {
         Bback2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlarmActivity.this, Control.class);  //Notification
+                Intent intent = new Intent(AlarmActivity.this, AfterClickActivity.class);  //Notification
                 startActivity(intent);
+
+                finish();
             }
         });
 

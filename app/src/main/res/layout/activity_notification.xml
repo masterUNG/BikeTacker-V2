@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bike Tracker"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Notification : "
+            android:id="@+id/noti"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:id="@+id/notistatus"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="437dp"
+        android:layout_height="235dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bike"
+        android:layout_weight="1.03"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menugray"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/Bmenu"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ongray"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/Bon"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/offgray"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/Boff"
+            android:layout_marginBottom="20dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

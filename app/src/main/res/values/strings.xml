@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BikeTracker</string>
+    <string name="title_activity_maps">Bike Tracker</string>
+    <string name="button_where">Current Location</string>
+    <string name="button_alarm">Alarm</string>
+    <string name="login_title">Please Login...</string>
+    <string name="username_title">Username</string>
+    <string name="password_title">Password</string>
+    <string name="password_confirm_title">Confirm Password</string>
+    <string name="button_login">Login</string>
+</resources>

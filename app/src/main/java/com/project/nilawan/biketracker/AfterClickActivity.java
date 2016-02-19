@@ -171,17 +171,12 @@ public class AfterClickActivity extends Activity {
 
                 private void condition() {
 
+                    statusABoolean = checkStatus(mo);
 
                     /**station1*/
                     if (mo == 1) {
                         Button alarmOn = (Button) findViewById(R.id.statusbike);
                         alarmOn.setBackgroundResource(R.drawable.checkbike);
-
-                        statusABoolean = checkStatus(mo);
-
-                        if (statusABoolean) {
-                            //showNotification();
-                        }
 
                         Log.d("19Feb", "ยังเคลื่อนที่อยู่นะ");
 
@@ -189,6 +184,18 @@ public class AfterClickActivity extends Activity {
                     } else if (mo == 0) {
                         Button alarmOn = (Button) findViewById(R.id.statusbike);
                         alarmOn.setBackgroundResource(R.drawable.safe);
+
+
+
+                        if (statusABoolean) {
+
+                            Log.d("19FebV2", "ทำงานใน IF ");
+
+                            Intent intent = new Intent(AfterClickActivity.this, Control.class);
+                            startActivity(intent);
+                        }
+
+
                     }
 
 
@@ -209,7 +216,7 @@ public class AfterClickActivity extends Activity {
 
         douIndex = douIndex + mo;
 
-        if (douIndex == 1) {
+        if (mo == 0) {
             myStatus = true;
         } else {
             myStatus = false;
@@ -217,6 +224,7 @@ public class AfterClickActivity extends Activity {
 
         Log.d("19Feb", "douIndex = " + douIndex);
         Log.d("19Feb", "Status ==> " + myStatus);
+        Log.d("19FebV2", "Status ==> " + myStatus);
 
         return myStatus;
     }

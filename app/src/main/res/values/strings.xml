@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BikeTracker</string>
+    <string name="app_name">Bike Tracker</string>
     <string name="title_activity_maps">Bike Tracker</string>
     <string name="button_where">Current Location</string>
     <string name="button_alarm">Alarm</string>

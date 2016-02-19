@@ -1,16 +1,17 @@
-<LinearLayout
+<RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
     <LinearLayout
-        android:layout_width="362dp"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linTop">
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="70dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Back"
             android:id="@+id/Bback"
@@ -20,7 +21,7 @@
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="91dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Map Type"
             android:id="@+id/Btype"
@@ -29,7 +30,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:layout_width="77dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Zoom in"
             android:id="@+id/Bzoomin"
@@ -40,7 +41,7 @@
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="93dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Zoom out"
             android:id="@+id/Bzoomout"
@@ -52,22 +53,18 @@
 
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="405dp" android:id="@+id/map" tools:context=".MapsActivity"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
     android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_weight="1" />
+    android:layout_weight="1"
+    android:layout_below="@+id/linTop"
+    android:layout_above="@+id/linLat" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-    </LinearLayout>
-
-<LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal">
+    android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/linButton"
+        android:id="@+id/linLat">
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -75,22 +72,25 @@
         android:text="Latitude : "
         android:id="@+id/textView6"
         android:layout_weight="1"
-        android:layout_gravity="center_vertical" />
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:text="Text1"
         android:id="@+id/textView3"
         android:layout_gravity="center_horizontal"
         android:textSize="20dp"
-        android:layout_weight="1" />
+        android:layout_weight="2" />
 </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linButton">
 
         <TextView
             android:layout_width="0dp"
@@ -99,17 +99,18 @@
             android:text="Longitude : "
             android:id="@+id/textView7"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:text="Text2"
         android:id="@+id/textView4"
         android:layout_gravity="center_horizontal"
         android:textSize="20dp"
-        android:layout_weight="1" />
+        android:layout_weight="2" />
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
 

@@ -31,7 +31,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Control extends Activity {
+public class AfterClickActivity extends Activity {
 
     private GoogleApiClient client;
 
@@ -65,7 +65,7 @@ public class Control extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent al = new Intent(Control.this, AlarmActivity.class);
+                Intent al = new Intent(AfterClickActivity.this, AlarmActivity.class);
                 finish();
                 startActivity(al);
 
@@ -76,7 +76,7 @@ public class Control extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent inte = new Intent(Control.this, MapsActivity.class);
+                Intent inte = new Intent(AfterClickActivity.this, MapsActivity.class);
                 finish();
                 startActivity(inte);
             }
@@ -86,7 +86,7 @@ public class Control extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent inte = new Intent(Control.this, NotificationSet.class);
+                Intent inte = new Intent(AfterClickActivity.this, NotificationSet.class);
                 finish();
                 startActivity(inte);
             }
@@ -97,7 +97,7 @@ public class Control extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent inte = new Intent(Control.this, Login.class);
+                Intent inte = new Intent(AfterClickActivity.this, Login.class);
                 startActivity(inte);
 
             }
@@ -180,7 +180,7 @@ public class Control extends Activity {
                         statusABoolean = checkStatus(mo);
 
                         if (statusABoolean) {
-                            showNotification();
+                            //showNotification();
                         }
 
                         Log.d("19Feb", "ยังเคลื่อนที่อยู่นะ");
@@ -223,7 +223,7 @@ public class Control extends Activity {
 
     private void showNotification() {
 
-        NotificationCompat.Builder notification = new NotificationCompat.Builder(Control.this);
+        NotificationCompat.Builder notification = new NotificationCompat.Builder(AfterClickActivity.this);
 
         notification.setSmallIcon(R.drawable.red);
         notification.setTicker("New notification!!!");
